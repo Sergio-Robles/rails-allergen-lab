@@ -1,0 +1,14 @@
+<%= link_to 'Index', '/users' %><br>
+
+<h2><%= @user.name %> </h2>
+<%= link_to 'Edit User Name', edit_user_path(@user) %><br>
+
+
+<% @user.recipes.each do |r| %>
+    <p>Recipes: <%= r.name %> </p><br>
+<% end %>
+
+<% @user.allergens.each do |a| %>
+    <p>Allergic Ingredient: <%= a.ingredient.name %> </p>
+<% end %>
+

@@ -1,0 +1,6 @@
+<h1>Ingredients index</h1>
+
+<% @ingredients.each do |i| %>
+    <p><%= i.name %></p>
+    <p>Number of recipes that contain this ingredient:<%= i.recipes.count %></p><br>
+<% end %>

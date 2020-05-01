@@ -1,0 +1,7 @@
+<%= link_to 'All the recipes', '/recipes' %>
+
+<h1>Recipe: <%= @recipe.name %></h1><br>
+
+<% @recipe.ingredients.each do |i| %>
+    <%= i.name %><br>
+<% end %>

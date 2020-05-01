@@ -1,0 +1,11 @@
+<%= link_to 'Index', '/users' %><br>
+
+<h2> Create an User: </h2>
+
+<%= form_for (@user) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+
+<%= f.submit%>
+<% end %>

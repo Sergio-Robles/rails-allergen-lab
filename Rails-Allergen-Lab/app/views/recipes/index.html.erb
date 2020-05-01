@@ -1,0 +1,8 @@
+<%= link_to 'All the users', '/users' %>
+
+<h1>All the recipes</h1>
+
+<% @recipes.each do |r| %>
+    <%= link_to r.name, recipe_path(r) %><br>
+
+<% end %>

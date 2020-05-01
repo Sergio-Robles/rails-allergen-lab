@@ -1,0 +1,7 @@
+<h1>All the users</h1>
+
+<% @users.each do |u| %>
+    <%= link_to u.name, user_path(u) %><br>
+    <%= link_to 'Delete this user', user_path(u),  method: :delete %><br>
+    <br>
+<% end %>
